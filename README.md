@@ -30,7 +30,9 @@ For a chatbot, we will use **Hugging Face's `transformers` library**, which simp
 ### **1. Launch an EC2 Instance**
 - Log in to AWS and navigate to **EC2**.
 - Click **Launch Instance** and choose an **Ubuntu 20.04 LTS AMI**.
-- Select an instance type (e.g., `t2.medium` or higher for better performance).
+- Select an instance type (e.g., `t3.medium` or higher for better performance).
+- Turn on "Allow SSH traffic from Anywhere ", "Allow HTTPS traffic from the internet" and "Allow HTTP traffic from the internet".
+- Set the storage to 20 GiB of gp3. 
 - Configure security groups to allow SSH access.
 - Generate and download an SSH key pair for access.
 
